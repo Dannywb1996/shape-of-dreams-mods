@@ -5,7 +5,7 @@ A comprehensive RPG system mod for Shape of Dreams that adds items, equipment, s
 ## Features
 
 - **447+ Items**: Weapons, armor, rings, amulets, belts, and consumables
-- **Full Localization**: 11 languages supported
+- **Full Localization**: 13 languages supported
 - **Stat System**: Allocatable stat points (Strength, Vitality, Defense, Intelligence, Agility, Luck)
 - **Weapon Mastery**: Level up weapons as you use them
 - **Equipment System**: Full character equipment with slots

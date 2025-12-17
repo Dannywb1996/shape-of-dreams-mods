@@ -1,0 +1,12 @@
+{
+  "id": "com.chino.rpgitemsmod",
+  "name": "RPG Items Mod",
+  "author": "Chino",
+  "modVer": "2.0",
+  "supportedGameVer": [
+    "*"
+  ],
+  "assemblies": [
+    "bin/Debug/netstandard2.1/*.dll"
+  ]
+}

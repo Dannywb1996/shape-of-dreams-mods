@@ -1,0 +1,13 @@
+{
+  "id": "com.chino.infinitedungeon",
+  "name": "Infinite Dungeon",
+  "author": "Chino",
+  "modVer": "1.1.0",
+  "description": "Procedurally generated infinite dungeon mode with hunter curses, weakened bosses, and endless exploration.",
+  "supportedGameVer": [
+    "*"
+  ],
+  "assemblies": [
+    "bin/*.dll"
+  ]
+}

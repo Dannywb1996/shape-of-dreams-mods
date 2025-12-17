@@ -1,0 +1,65 @@
+[h1]RPG Items Mod / RPG物品模组[/h1]
+Adds a comprehensive RPG-style inventory system with equipment, consumables, item drops, and set bonuses.
+添加全面的RPG风格背包系统，包含装备、消耗品、物品掉落和套装效果。
+
+[h2]⚠️ Designed for Extended Gameplay / 专为长局游戏设计 ⚠️[/h2]
+This mod is designed to work together with [b]Infinite Dungeon[/b] mod and [b]Essence Nerf[/b] mod (95% reduction) for balanced extended runs.
+此模组设计与[b]无限地牢[/b]模组和[b]精华削弱[/b]模组(95%削弱)配合使用，以实现平衡的长局游戏体验。
+
+[h2]Features / 功能[/h2]
+[list]
+[*] Full inventory system with drag & drop / 完整的拖放式背包系统
+[*] Equipment slots: Head, Chest, Legs, Hands, Boots, Belt, Rings, Amulet, Weapons / 装备栏位：头盔、胸甲、腿甲、手套、靴子、腰带、戒指、项链、武器
+[*] Two-handed and one-handed weapon system / 双手和单手武器系统
+[*] Hero-specific equipment (Aurena, Bismuth, Lacerta, Vesper, Shell, Nachiya) / 英雄专属装备
+[*] Consumable bar with hotkeys (1-4) and auto-stacking / 消耗品快捷栏(1-4)，自动堆叠
+[*] Set bonuses for wearing items of the same rarity (2/4/6 piece bonuses) / 同稀有度套装效果(2/4/6件套)
+[*] Item upgrade system using Dream Dust / 使用梦尘升级物品
+[*] Weapon mastery system with progressive unlocks / 武器精通系统，逐步解锁
+[*] 447 unique items across all rarities / 447件独特物品，涵盖所有稀有度
+[*] Drop items to the world floor / 丢弃物品到地面
+[*] Pick up and dismantle dropped items for Dream Dust / 拾取和分解物品获取梦尘
+[*] Multiplayer support - share items with other players / 多人游戏支持 - 与其他玩家分享物品
+[*] Items persist when saving/continuing a run (new game = fresh start) / 物品在保存/继续游戏时保留(新游戏=全新开始)
+[*] Selectable UI layouts: Classic or Diablo-style / 可选UI布局：经典或暗黑风格
+[*] [b]All keybinds and settings are configurable in mod settings![/b] / [b]所有按键和设置都可在模组设置中配置！[/b]
+[/list]
+
+[h2]Gear Effects / 装备效果[/h2]
+[list]
+[*] Attack, Defense, Health, Ability Power / 攻击、防御、生命、法强
+[*] Critical Chance & Critical Damage / 暴击率和暴击伤害
+[*] Attack Speed & Movement Speed / 攻击速度和移动速度
+[*] Ability Haste (Memory Cooldown Reduction) / 技能急速(记忆冷却缩减)
+[*] Dodge Charges & Dodge Cooldown Reduction / 闪避次数和闪避冷却缩减
+[*] Life Steal & Health Regeneration / 生命偷取和生命回复
+[*] Shield Regeneration (capped at 50% max HP) / 护盾回复(上限为最大生命值的50%)
+[*] Thorns (reflect damage) / 荆棘(反弹伤害)
+[*] Gold on Kill & Dream Dust on Kill / 击杀获得金币和梦尘
+[*] Elemental Effects (Fire, Ice, Light, Dark) / 元素效果(火、冰、光、暗)
+[*] Auto Attack & Auto Aim / 自动攻击和自动瞄准
+[/list]
+
+[h2]Controls (Default) / 操作(默认)[/h2]
+[list]
+[*] I - Open/Close inventory / 打开/关闭背包
+[*] K - Open/Close stats window / 打开/关闭属性窗口
+[*] N - Open/Close weapon mastery window / 打开/关闭武器精通窗口
+[*] 1-4 - Use consumables / 使用消耗品
+[*] F - Pick up dropped items / 拾取掉落物品
+[*] G - Dismantle dropped items (hold) / 分解掉落物品(长按)
+[*] Middle Mouse - Share dropped items with other players / 鼠标中键 - 与其他玩家分享物品
+[*] Right-click - Quick equip/use items / 右键 - 快速装备/使用物品
+[/list]
+
+[h2]Quick Sell & Dismantle (in inventory) / 快速出售和分解(背包内)[/h2]
+[list]
+[*] S (hold) - Sell hovered item (near merchant) / S键(长按) - 出售悬停物品(靠近商人时)
+[*] Ctrl + S - Instant sell (skip confirmation) / Ctrl+S - 立即出售(跳过确认)
+[*] G (hold) - Dismantle hovered item / G键(长按) - 分解悬停物品
+[*] Ctrl + G - Instant dismantle (skip confirmation) / Ctrl+G - 立即分解(跳过确认)
+[/list]
+
+[h2]Note / 注意[/h2]
+This mod alters gameplay significantly. All players need the mod installed for multiplayer.
+此模组会显著改变游戏玩法。多人游戏时所有玩家都需要安装此模组。

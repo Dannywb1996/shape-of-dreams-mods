@@ -47,11 +47,8 @@ desktop.ini
 # Batch files (build scripts are environment-specific)
 *.bat
 
-# Images (too large for git, should be distributed separately)
-images/
-*.png
-*.jpg
-*.jpeg
+# Note: Images are included in the repository for completeness
+# They may be large but are necessary for the mod to function
 
 # Temporary files
 *.tmp

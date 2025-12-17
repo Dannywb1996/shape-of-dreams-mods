@@ -1,0 +1,44 @@
+[h1]Infinite Dungeon Mod / 无限地牢模组[/h1]
+
+Transform Shape of Dreams into an endless roguelike adventure! Explore an infinite procedurally generated dungeon that expands as you venture deeper into the dream.
+将《梦境之形》变成无尽的Roguelike冒险！探索一个随着你深入梦境而无限扩展的程序生成地牢。
+
+[h2]⭐ BEST PLAYED WITH / 最佳搭配 ⭐[/h2]
+[b]This mod was designed to work together with:[/b]
+[b]此模组设计为与以下模组配合使用：[/b]
+[list]
+[*][b]RPG Items Mod[/b] - Custom equipment with depth-based scaling, weapon mastery, and set bonuses / RPG物品模组 - 基于深度缩放的自定义装备、武器精通和套装效果
+[*][b]Essence Nerf Mod (95% reduction recommended)[/b] - Balances essence power for extended runs / 精华削弱模组（推荐95%削弱）- 为长期游玩平衡精华强度
+[/list]
+Together, these three mods create the ultimate roguelike experience with proper scaling and balance for infinite exploration!
+三个模组结合，为无限探索创造终极Roguelike体验，拥有适当的缩放和平衡！
+
+[h2]Features / 功能[/h2]
+[list]
+[*]Infinite procedurally generated dungeon / 无限程序生成地牢
+[*]Multiple zones with random variety / 多区域随机变化
+[*]Depth-based difficulty scaling / 基于深度的难度缩放
+[*]Hunter infection system with curses / 猎人感染系统与诅咒
+[*]Weakened boss encounters / 削弱Boss遭遇战
+[*]Pure White Rift endgame option (after depth 50) / 纯白裂隙终局选项（深度50后）
+[*]Full multiplayer support / 完整多人游戏支持
+[*]Bilingual (English/Chinese) / 双语支持
+[*]Highly configurable settings / 高度可配置设置
+[/list]
+
+[h2]How to Play / 玩法[/h2]
+Simply start a run and explore! New paths will generate as you progress. The deeper you go, the harder it gets - but the rewards scale too!
+开始游戏并探索即可！新路径会随着你的前进而生成。越深入越困难 - 但奖励也会增加！
+
+[h2]Controls / 控制[/h2]
+[list]
+[*]Shift + WASD - Pan the map / 平移地图
+[*]H - Center on current node / 居中到当前节点
+[/list]
+
+[h2]Note / 注意[/h2]
+There is no end - keep exploring forever, or use the Pure White Rift after depth 50 to challenge the final boss!
+没有终点 - 永远探索下去，或在深度50后使用纯白裂隙挑战最终Boss！
+
+Made with ♥ by Chino
+由Chino用♥制作

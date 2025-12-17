@@ -1,0 +1,9 @@
+{
+  "id": "com.chino.infinitedungeon",
+  "name": "Infinite Dungeon",
+  "author": "Chino",
+  "modVer": "1.2.0",
+  "description": "Procedurally generated infinite dungeon mode with hunter curses, weakened bosses, and endless exploration. BEST PLAYED WITH: RPG Items Mod (for custom equipment scaling) and Essence Nerf Mod (set to 95% reduction) - these three mods were designed to work together for the ultimate roguelike experience!",
+  "assemblies": ["bin/*.dll"],
+  "supportedGameVer": ["*"]
+}

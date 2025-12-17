@@ -54,9 +54,7 @@ Both mods support 13 languages:
 
 ### Build Instructions
 
-**Important:** These mods use C# 5 syntax and **cannot** be built with `dotnet build`. They require the .NET Framework 4.x compiler (csc.exe).
-
-The project files (.sln, .csproj) are included for IDE support (IntelliSense, code navigation) but **will not build** with Visual Studio or dotnet CLI due to C# 5 and Unity reference limitations.
+The project files (.sln, .csproj) are configured to build successfully with Visual Studio 2022 or MSBuild.
 
 #### How to Build
 

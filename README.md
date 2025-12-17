@@ -54,21 +54,24 @@ Both mods support 11 languages:
 
 ### Build Instructions
 
-**Important:** These mods use C# 5 syntax and must be built with the .NET Framework 4.x compiler (csc.exe), not dotnet CLI.
+**Important:** These mods use C# 5 syntax and **cannot** be built with `dotnet build`. They require the .NET Framework 4.x compiler (csc.exe).
 
-The project files (.csproj) are included for IDE support (IntelliSense, navigation), but building requires the game's batch scripts or the C# 5 compiler directly.
+The project files (.sln, .csproj) are included for IDE support (IntelliSense, code navigation) but **will not build** with Visual Studio or dotnet CLI due to C# 5 and Unity reference limitations.
 
-#### Original Build Scripts (Not in Repository)
-- `RPGItemsMod/compile_rpgitems.bat`
-- `InfiniteDungeonMod/compile.bat`
+#### How to Build
 
-These batch scripts use:
+Use the C# 5 compiler directly with the game's DLL references. Example command:
+
 ```batch
-C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe ^
+  /target:library ^
+  /out:RPGItemsMod.dll ^
+  /reference:"D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\*.dll" ^
+  /langversion:5 ^
+  *.cs
 ```
 
-#### Building from Visual Studio
-While Visual Studio can open the .sln file and provide IntelliSense, building may fail due to C# 5 limitations. Use the batch scripts from the original distribution for reliable builds.
+Or use the original build scripts from the development environment (not included in repo as they're environment-specific).
 
 The mods target `netstandard2.1` and reference game assemblies from `D:\SteamLibrary\steamapps\common\Shape of Dreams\`.
 

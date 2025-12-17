@@ -2529,7 +2529,7 @@ namespace InfiniteDungeonMod
             
             if (_harmony != null)
             {
-                _harmony.UnpatchSelf();
+                _harmony.UnpatchAll(_harmony.Id);
                 _harmonyPatchesApplied = false;
             }
             

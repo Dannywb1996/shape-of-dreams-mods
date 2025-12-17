@@ -1,14 +1,47 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Disable NuGet entirely -->
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <LangVersion>5</LangVersion>
-    <AssemblyName>RPGItemsMod</AssemblyName>
-    <RootNamespace>RPGItemsMod</RootNamespace>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImportProjectExtensionTargets>false</ImportProjectExtensionTargets>
   </PropertyGroup>
-
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPGItemsMod</RootNamespace>
+    <AssemblyName>RPGItemsMod</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <SkipValidatePackageReferences>true</SkipValidatePackageReferences>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0618,1701,1702</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0618,1701,1702</NoWarn>
+  </PropertyGroup>
   <ItemGroup>
-    <!-- Shape of Dreams game assemblies -->
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="Dew.Core">
       <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Dew.Core.dll</HintPath>
       <Private>False</Private>
@@ -21,8 +54,14 @@
       <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Dew.External.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    
-    <!-- Unity assemblies -->
+    <Reference Include="Dew.Contents">
+      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Dew.Contents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dew.Gameplay">
+      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Dew.Gameplay.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
@@ -35,24 +74,6 @@
       <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Unity.TextMeshPro.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    
-    <!-- Networking -->
-    <Reference Include="Mirror">
-      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Mirror.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    
-    <!-- Harmony -->
-    <Reference Include="0Harmony">
-      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    
-    <!-- Additional Unity modules -->
     <Reference Include="UnityEngine.UIModule">
       <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\UnityEngine.UIModule.dll</HintPath>
       <Private>False</Private>
@@ -77,13 +98,30 @@
       <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="netstandard">
-      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\netstandard.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Mirror.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-
   <ItemGroup>
-    <None Include="i18n\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="**\*.cs" Exclude="obj\**;bin\**" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="i18n\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  
+  <!-- Skip NuGet package validation -->
+  <Target Name="ResolveNuGetPackageAssets" />
+  <Target Name="_GetAllRestoreProjectPathItems" />
 </Project>

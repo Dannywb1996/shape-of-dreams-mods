@@ -58,20 +58,22 @@ The project files (.sln, .csproj) are configured to build successfully with Visu
 
 #### How to Build
 
-Use the C# 5 compiler directly with the game's DLL references. Example command:
+**Option 1: Visual Studio 2022**
+1. Open `ShapeOfDreamsMods.sln`
+2. Update the DLL reference paths in both `.csproj` files to match your game installation
+3. Build → Build Solution (Ctrl+Shift+B)
 
+**Option 2: Command Line (C# Compiler)**
 ```batch
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe ^
   /target:library ^
   /out:RPGItemsMod.dll ^
-  /reference:"D:\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\*.dll" ^
+  /reference:"YOUR_GAME_PATH\Shape of Dreams_Data\Managed\*.dll" ^
   /langversion:5 ^
   *.cs
 ```
 
-Or use the original build scripts from the development environment (not included in repo as they're environment-specific).
-
-The mods target `netstandard2.1` and reference game assemblies from `D:\SteamLibrary\steamapps\common\Shape of Dreams\`.
+**Note:** Update the game DLL paths in the `.csproj` files to match your installation location. The default paths point to `D:\SteamLibrary\steamapps\common\Shape of Dreams\`.
 
 ## 📁 Project Structure
 

@@ -50,7 +50,7 @@ Both mods support 11 languages:
 ### Requirements
 - .NET Framework 4.x (C# 5 compiler)
 - Shape of Dreams game installed at `D:\SteamLibrary\steamapps\common\Shape of Dreams`
-- BepInEx mod loader installed in the game directory
+- Game's built-in mod loader
 
 ### Build Instructions
 

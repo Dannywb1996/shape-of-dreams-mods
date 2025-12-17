@@ -1,0 +1,59 @@
+# Build outputs
+*.dll
+*.pdb
+*.exe
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Saved game data
+saves/
+*.dat
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Batch files (build scripts are environment-specific)
+*.bat
+
+# Images (too large for git, should be distributed separately)
+images/
+*.png
+*.jpg
+*.jpeg
+
+# Temporary files
+*.tmp
+*.temp
+*.log

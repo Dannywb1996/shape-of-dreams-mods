@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>5</LangVersion>
+    <AssemblyName>InfiniteDungeonMod</AssemblyName>
+    <RootNamespace>InfiniteDungeonMod</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Shape of Dreams game assemblies - Update paths to your game installation -->
+    <Reference Include="Dew.Core">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Dew.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dew.UI">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Dew.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dew.External">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Dew.External.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <!-- Unity assemblies -->
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <!-- Networking -->
+    <Reference Include="Mirror">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\Shape of Dreams_Data\Managed\Mirror.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <!-- Harmony -->
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\..\..\SteamLibrary\steamapps\common\Shape of Dreams\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="i18n\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

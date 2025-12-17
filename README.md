@@ -6,7 +6,7 @@ This repository contains two major mods for the game **Shape of Dreams**:
 
 ### 1. RPGItemsMod
 A comprehensive RPG system that adds:
-- **447+ items** with full localization (11 languages)
+- **447+ items** with full localization (13 languages)
 - Equipment system (weapons, armor, accessories)
 - Stat system with allocatable points
 - Weapon mastery progression
@@ -30,7 +30,7 @@ An endless dungeon exploration mode featuring:
 
 ## 🌍 Supported Languages
 
-Both mods support 11 languages:
+Both mods support 13 languages:
 - English (en-US)
 - Chinese Simplified (zh-CN)
 - Chinese Traditional (zh-TW)

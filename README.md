@@ -48,32 +48,31 @@ Both mods support 13 languages:
 ## 🛠️ Building
 
 ### Requirements
-- .NET Framework 4.x (C# 5 compiler)
-- Shape of Dreams game installed at `D:\SteamLibrary\steamapps\common\Shape of Dreams`
-- Game's built-in mod loader
+- Visual Studio 2022 (or .NET Framework 4.x C# compiler)
+- Shape of Dreams game installed
 
 ### Build Instructions
 
-The project files (.sln, .csproj) are configured to build successfully with Visual Studio 2022 or MSBuild.
-
-#### How to Build
-
-**Option 1: Visual Studio 2022**
-1. Open `ShapeOfDreamsMods.sln`
-2. Update the DLL reference paths in both `.csproj` files to match your game installation
+#### Option 1: Visual Studio 2022 (Recommended)
+1. Open `ShapeOfDreamsMods.sln` in Visual Studio
+2. Update DLL paths in `.csproj` files if your game isn't at `D:\SteamLibrary\steamapps\common\Shape of Dreams`
 3. Build → Build Solution (Ctrl+Shift+B)
+4. DLLs output to `bin\Release\` in each mod folder
 
-**Option 2: Command Line (C# Compiler)**
+#### Option 2: Command Line
 ```batch
+cd RPGItemsMod
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe ^
   /target:library ^
-  /out:RPGItemsMod.dll ^
-  /reference:"YOUR_GAME_PATH\Shape of Dreams_Data\Managed\*.dll" ^
+  /out:bin\Release\RPGItemsMod.dll ^
+  /reference:"YOUR_GAME_PATH\Shape of Dreams_Data\Managed\UnityEngine.dll" ^
+  /reference:"YOUR_GAME_PATH\Shape of Dreams_Data\Managed\Dew.Core.dll" ^
+  ... (see .csproj for full reference list) ^
   /langversion:5 ^
   *.cs
 ```
 
-**Note:** Update the game DLL paths in the `.csproj` files to match your installation location. The default paths point to `D:\SteamLibrary\steamapps\common\Shape of Dreams\`.
+Replace `YOUR_GAME_PATH` with your actual game installation path.
 
 ## 📁 Project Structure
 

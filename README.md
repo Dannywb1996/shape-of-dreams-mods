@@ -48,18 +48,29 @@ Both mods support 11 languages:
 ## 🛠️ Building
 
 ### Requirements
-- .NET Framework 4.x
-- C# 5 compiler (included with .NET Framework)
-- Shape of Dreams game installed
-- BepInEx mod loader
+- .NET Framework 4.x (C# 5 compiler)
+- Shape of Dreams game installed at `D:\SteamLibrary\steamapps\common\Shape of Dreams`
+- BepInEx mod loader installed in the game directory
 
 ### Build Instructions
 
-Each mod has its own build script in the original distribution:
+**Important:** These mods use C# 5 syntax and must be built with the .NET Framework 4.x compiler (csc.exe), not dotnet CLI.
+
+The project files (.csproj) are included for IDE support (IntelliSense, navigation), but building requires the game's batch scripts or the C# 5 compiler directly.
+
+#### Original Build Scripts (Not in Repository)
 - `RPGItemsMod/compile_rpgitems.bat`
 - `InfiniteDungeonMod/compile.bat`
 
-The mods target `netstandard2.1` and use the game's assemblies as references.
+These batch scripts use:
+```batch
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe
+```
+
+#### Building from Visual Studio
+While Visual Studio can open the .sln file and provide IntelliSense, building may fail due to C# 5 limitations. Use the batch scripts from the original distribution for reliable builds.
+
+The mods target `netstandard2.1` and reference game assemblies from `D:\SteamLibrary\steamapps\common\Shape of Dreams\`.
 
 ## 📁 Project Structure
 

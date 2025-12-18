@@ -1626,13 +1626,13 @@ public static class ChatManagerPatch
             bonus.abilityPowerFlat = ap;
             bonus.movementSpeedPercentage = moveSpd;
             bonus.attackSpeedPercentage = atkSpd;
-            bonus.critChanceFlat = crit;
+            bonus.critChanceFlat = crit;  // Already in decimal format (0.005 = 0.5%)
             
             StatBonus addedBonus = hero.Status.AddStatBonus(bonus);
             _heroStatsSystemBonuses[heroNetId] = addedBonus;
             
-            RPGLog.Info(string.Format(" SERVER: Successfully applied StatsSystem bonus for client hero {0}: ATK+{1}, HP+{2}, DEF+{3}, AP+{4}", 
-                hero.name, (int)atk, (int)hp, (int)def, (int)ap));
+            RPGLog.Info(string.Format(" SERVER: Applied StatsSystem for client {0}: ATK+{1}, HP+{2}, DEF+{3}, AP+{4}, MoveSpd+{5:F2}%, AtkSpd+{6:F2}%, Crit+{7:F4}", 
+                hero.name, (int)atk, (int)hp, (int)def, (int)ap, moveSpd, atkSpd, crit));
         }
         catch (Exception e)
         {
